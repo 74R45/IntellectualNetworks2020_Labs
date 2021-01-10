@@ -1,0 +1,93 @@
+Prefix(:=<http://www.semanticweb.org/ivan/ontologies/2020/10/untitled-ontology-6#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/ivan/ontologies/2020/10/untitled-ontology-6>
+
+Declaration(Class(:Article))
+Declaration(Class(:Author))
+Declaration(Class(:Repo))
+Declaration(Class(:Research))
+Declaration(ObjectProperty(:Creator))
+Declaration(DataProperty(:Degree))
+Declaration(DataProperty(:Subject))
+Declaration(DataProperty(:Title))
+Declaration(DataProperty(:Year))
+Declaration(NamedIndividual(:Article1))
+Declaration(NamedIndividual(:Article2))
+Declaration(NamedIndividual(:Article3))
+Declaration(NamedIndividual(:Author1))
+Declaration(NamedIndividual(:Author2))
+Declaration(NamedIndividual(:Research1))
+Declaration(NamedIndividual(:Research2))
+Declaration(NamedIndividual(:Research3))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :Degree (:Degree)
+
+SubDataPropertyOf(:Degree owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Article (:Article)
+
+SubClassOf(:Article :Repo)
+
+# Class: :Research (:Research)
+
+SubClassOf(:Research :Repo)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Article1 (:Article1)
+
+ClassAssertion(:Article :Article1)
+ObjectPropertyAssertion(:Creator :Article1 :Author1)
+ObjectPropertyAssertion(:Creator :Article1 :Author2)
+DataPropertyAssertion(:Subject :Article1 "Math"^^xsd:string)
+DataPropertyAssertion(:Year :Article1 "2020"^^xsd:string)
+
+# Individual: :Article2 (:Article2)
+
+ClassAssertion(:Article :Article2)
+
+# Individual: :Article3 (:Article3)
+
+ClassAssertion(:Article :Article3)
+
+# Individual: :Author1 (:Author1)
+
+ClassAssertion(:Author :Author1)
+
+# Individual: :Author2 (:Author2)
+
+ClassAssertion(:Author :Author2)
+
+# Individual: :Research1 (:Research1)
+
+ClassAssertion(:Research :Research1)
+
+# Individual: :Research2 (:Research2)
+
+ClassAssertion(:Research :Research2)
+
+# Individual: :Research3 (:Research3)
+
+ClassAssertion(:Research :Research3)
+
+
+)

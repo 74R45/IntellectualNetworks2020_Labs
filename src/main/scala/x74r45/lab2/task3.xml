@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/terms/">
+
+    <rdf:Description>
+      <!-- from /elements/1.1/ namespace -->
+      <dc:title>Forget the stream leak, here's a proper look at Cyberpunk 2077's Nomad intro</dc:title>
+      <dc:subject>CD Projekt Red, Cyberpunk 2077</dc:subject>
+      <dc:contributor>Natalie Clayton</dc:contributor>
+      <dc:language>en-US</dc:language>
+      <dc:publisher>Rock Paper Shotgun</dc:publisher>
+
+      <!-- from /terms/ namespace -->
+      <dc:created>24th November 2020 / 8:03PM</dc:created>
+      <dc:URI>https://www.rockpapershotgun.com/2020/11/24/forget-the-stream-leak-heres-a-proper-look-at-cyberpunk-2077s-nomad-intro/</dc:URI>
+    </rdf:Description>
+</rdf:RDF>

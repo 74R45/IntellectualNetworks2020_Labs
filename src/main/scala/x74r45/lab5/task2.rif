@@ -1,0 +1,8 @@
+// If Socrates is a human, then he is mortal
+Document(
+  Prefix(cpt <http://example.com/concepts#>)
+  Prefix(ppl <http://example.com/people#>)
+  Group(
+    cpt:mortal(ppl:socrates) :- cpt:human(ppl:socrates)
+  )
+)

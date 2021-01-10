@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="books-schema.xsd">
+  <book forSale="false" rare="false">
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <publisher>Chatto &amp; Windus</publisher>
+    <year>1925</year>
+    <ISBN>978-074-327-3</ISBN>
+    <numPages>218</numPages>
+    <language>English</language>
+    <genre>Tragedy</genre>
+    <rating>93.2</rating>
+  </book>
+  <book forSale="true" rare="false">
+    <title>Odyssey</title>
+    <author>Homer</author>
+    <publisher>Macmillan</publisher>
+    <year>1488</year>
+    <ISBN>978-031-286-9</ISBN>
+    <price>27.99</price>
+    <numPages>432</numPages>
+    <language>English</language>
+    <genre>Epic poetry</genre>
+    <rating>87.3</rating>
+  </book>
+  <book forSale="false" rare="true">
+    <title>Mr. William Shakespeare's Comedies, Histories, &amp; Tragedies</title>
+    <author>William Shakespeare</author>
+    <publisher>Edward Blount</publisher>
+    <year>1623</year>
+    <ISBN>972-321-644-3</ISBN>
+    <numPages>900</numPages>
+    <language>English</language>
+    <genre>English Renaissance theatre</genre>
+    <rating>100.0</rating>
+  </book>
+</collection>

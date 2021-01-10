@@ -1,0 +1,9 @@
+// Every human is mortal, Socrates is a human
+Document(
+  Prefix(cpt <http://example.com/concepts#>)
+  Prefix(ppl <http://example.com/people#>)
+   Group(
+    Forall ?human (cpt:mortal(?human) :- cpt:human(?human))
+    cpt:human(ppl:socrates)
+  )
+)

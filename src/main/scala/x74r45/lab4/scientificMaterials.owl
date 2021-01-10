@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/74r45/ontologies/2020/11/scientific-materials"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/74r45/ontologies/2020/11/scientific-materials">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BookSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repository"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#domain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PatternRecognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ViolentPython"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Repository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BookSeries"/>
+        <Class IRI="#Repository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal"/>
+        <Class IRI="#Repository"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Book"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Book"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BookSeries"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Journal"/>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Book"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Journal"/>
+        <NamedIndividual IRI="#PatternRecognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Book"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal>Jung W. Suh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal>Youngmin Kim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal>A Primer with Examples</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal>Accelerating MATLAB with GPU Computing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#AcceleratingMATLABWithGPUComputing"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>C.R. Fuller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>P.A. Nelson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>S.J. Elliott</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>Active Control of Vibration</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#ActiveControlOfVibration"/>
+        <Literal>1996</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+        <Literal>Flávio Soares Corrêa da Silva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+        <Literal>Jaume Agustí-Cullell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+        <Literal>Capturing Intelligence</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#CapturingIntelligence"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+        <Literal>Donghan Jin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+        <Literal>Energy And AI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#EnergyAndAI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal>Jonathan M. Spring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal>Timothy J. Shimeall</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal>A Strategic-Based Approach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal>Introduction to Information Security</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#IntroductionToInformationSecurity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#PatternRecognition"/>
+        <Literal>Edwin Hancock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#PatternRecognition"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#PatternRecognition"/>
+        <Literal>Pattern Recognition</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#PatternRecognition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#author"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+        <Literal>TJ O&apos;Connor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+        <Literal>A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#domain"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+        <Literal>Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+        <Literal>Violent Python</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#ViolentPython"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedShort">2013</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#author"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#domain"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#title"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#year"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

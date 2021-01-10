@@ -1,0 +1,40 @@
+Document(
+  Prefix(sc <http://www.semanticweb.org/74r45/ontologies/2020/11/scientific-materials#>)
+  Prefix(rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+  Prefix(xsd <http://www.w3.org/2001/XMLSchema#>)
+  Prefix(pred <http://www.w3.org/2007/rif-builtin-predicate#>)
+
+  Group(
+    // Every book in the repository is from "Computer Science" domain
+    Forall ?work (
+      If (?work#sc:Repository)
+      Then Assert(?work[sc:domain -> "Computer Science"^^xsd:string])
+    )
+
+    // Every book was written after 1995
+    Forall ?work ?year (
+      If (?work[sc:year -> ?year])
+      Then Assert(External(pred:numeric-greater-than(?year 1995)))
+    )
+
+    // Every book has a title
+    Forall ?work such that (?work#sc:Repository) (
+      Exists ?title (?work[sc:title -> ?title])
+    )
+
+    // Every book that was written by either S.J. Elliott or C.R. Fuller, was written by both of them
+    Forall ?work1 ?work2 such that And(?work1#sc:Repository ?work2#sc:Repository) (
+      If And(?work1[sc:author -> "S.J. Elliott"^^xsd:string] ?work2[sc:author -> "C.R. Fuller"^^xsd:string)
+      Then Assert(
+        Exists ?title1 ?title2 such that And(?work1[sc:title -> ?title1] ?work2[sc:title -> ?title2]) (
+          External(pred:contains())
+        )
+      )
+    )
+
+    // There isn't a book called "How to cook brownies"
+    Forall ?work such that (?work#sc:Repository) INeg(
+      Assert(?work[sc:title -> "How to cook brownies"^^xsd:string])
+    )
+  )
+)

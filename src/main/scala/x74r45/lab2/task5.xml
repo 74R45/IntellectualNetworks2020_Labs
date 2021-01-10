@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdfschema#"
+    xmlns:el="http://www.school157.edu.ua/elements/1.0/">
+
+    <rdf:Description rdf:about="http://www.school157.edu.ua/about">
+      <el:teachers rdf:parseType="Collection">
+        <rdf:Description rdf:about="olenaGennadiyivna"/>
+        <rdf:Description rdf:about="dmytroOlehovych"/>
+        <rdf:Description rdf:about="oleksandrPetrovych"/>
+      </el:teachers>
+      <el:years rdf:parseType="Collection">
+        <rdf:Description rdf:about="year1"/>
+        <rdf:Description rdf:about="year2"/>
+        <rdf:Description rdf:about="year3"/>
+      </el:years>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="teacher">
+      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="headTeacher">
+      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      <rdfs:subClassOf rdf:resource="#teacher"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="olenaGennadiyivna">
+      <el:name>Olena Gennadiyivna</el:name>
+      <rdf:type rdf:resource="#teacher"/>
+      <el:teachesIn rdf:resource="#year1"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="dmytroOlehovych">
+      <el:name>Dmytro Olehovych</el:name>
+      <rdf:type rdf:resource="#teacher"/>
+      <el:teachesIn rdf:resource="#year2"/>
+      <el:teachesIn rdf:resource="#year3"/>
+      <el:specializesIn rdf:resource="sport"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="oleksandrPetrovych">
+      <el:name>Oleksandr Petrovych</el:name>
+      <rdf:type rdf:resource="#headTeacher"/>
+      <el:teachesIn rdf:resource="#year2"/>
+      <el:teachesIn rdf:resource="#year3"/>
+    </rdf:Description>
+
+    <rdf:Property rdf:ID="teachesIn">
+      <rdfs:domain rdf:resource="#teacher"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:ID="specializesIn">
+      <rdfs:domain rdf:resource="#teacher"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:ID="name">
+      <rdfs:domain rdf:resource="#teacher"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:ID="numStudents">
+      <rdfs:domain rdf:resource="#year"/>
+    </rdf:Property>
+
+    <rdf:Description rdf:ID="year">
+      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="year1">
+      <rdf:type rdf:resource="#year"/>
+      <el:numStudents>13</el:numStudents>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="year2">
+      <rdf:type rdf:resource="#year"/>
+      <el:numStudents>8</el:numStudents>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="year3">
+      <rdf:type rdf:resource="#year"/>
+      <el:numStudents>17</el:numStudents>
+    </rdf:Description>
+</rdf:RDF>

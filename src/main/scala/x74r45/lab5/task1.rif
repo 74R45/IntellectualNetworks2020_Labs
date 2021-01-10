@@ -1,0 +1,7 @@
+// Every human is mortal
+Document(
+  Prefix(cpt <http://example.com/concepts#>)
+  Group(
+    Forall ?human (cpt:mortal(?human) :- cpt:human(?human))
+  )
+)

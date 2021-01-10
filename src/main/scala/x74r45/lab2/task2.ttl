@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema>.
+
+@prefix data: <https://www.cse.lehigh.edu/data/>.
+@prefix terms: <https://www.cse.lehigh.edu/terms/>.
+@prefix classes: <https://www.cse.lehigh.edu/classes/>.
+
+# defining data:hobbit
+data:freeman
+    terms:name "Matrin Freeman".
+
+data:mckellan
+    terms:name "Ian McKellan".
+
+classes:Movie
+    rdf:type rdfs:Class.
+
+data:hobbit
+    rdf:type classes:Movie;
+    terms:title "The Hobbit";
+    terms:year "2012";
+    terms:stars data:freeman;
+    terms:stars data:mckellan.
+
+# defining data:jackson
+classes:Person
+    rdf:type rdfs:Class.
+
+classes:Director
+    rdf:type rdfs:Class;
+    rdfs:subClassOf classes:Person.
+
+data:jackson
+    rdf:type classes:Director;
+    terms:name "Peter Jackson".
+
+# defining terms:stars
+classes:Actor
+    rdf:type rdfs:Class;
+    rdfs:subClassOf classes:Person.
+
+terms:stars
+    rdf:type rdf:Property;
+    rdfs:range classes:Actor.
