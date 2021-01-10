@@ -301,7 +301,8 @@ Syntax of different dialects can be found here:
 > ***Create the following RIF rules:***
 > -  ***"Every human is mortal";***
 > -  ***"If Socrates is a human, then he is mortal";***
-> -  ***"Every human is mortal, Socrates is a human".***  
+> -  ***"Every human is mortal, Socrates is a human".***
+>
 > ***Create 5-7 RIF rules for a previously created OWL ontology.***
 
 See [task1.rif](src/main/scala/x74r45/lab5/task1.rif), 
